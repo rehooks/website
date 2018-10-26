@@ -1,0 +1,102 @@
+## Getting Started
+
+### Setup
+
+First, you need to install **React v16.7 or higher**:
+
+```bash
+npm install --save react@^16.7.0-alpha.0 react-dom@^16.7.0-alpha.0
+```
+
+Or with yarn:
+
+```bash
+yarn add react@^16.7.0-alpha.0 react-dom@^16.7.0-alpha.0
+```
+
+Now you can start writing `useState` and `useEffect` in your code. Here's a simple counter example:
+
+```jsx
+import { useState } from 'react'
+
+function Example() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  )
+}
+```
+
+Alternatively, this is class-based equivalent:
+
+```jsx
+class Example extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      count: 0
+    }
+  }
+
+  onClick = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={this.onClick}>
+          Click me
+        </button>
+      </div>
+    )
+  }
+}
+```
+
+### Controlled Inputs
+
+First install `@rehooks/input-value`:
+
+```
+yarn add @rehooks/input-value
+```
+
+Then apply `useInputValue` in your component:
+
+```jsx
+import useInputValue from '@rehooks/input-value';
+
+function MyComponent() {
+  let name = useInputValue('Jamie');
+  // name = { value: 'Jamie', onChange: [Function] }
+  return <input {...name}/>;
+}
+```
+
+## FAQ
+
+### What are React Hooks?
+
+React Hooks allow you to use React concepts like state, context and methods without writing a class.
+
+### What are Rehooks?
+
+Rehooks are packages that make it easy to use Hooks in your existing application. Kinda like lodash for React Hooks.
+
+## Contributing
+
+Please check out the [rehooks/ideas repo](https://github.com/rehooks/ideas) or if you already know a Hook you want to build, check out the [rehooks/template repo](https://github.com/rehooks/template)
+
+## Edit this page
+
+You can find the repo for this website at [rehooks/website](http://github.com/rehooks/website)
