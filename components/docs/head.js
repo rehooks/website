@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default ({ children, ...props }) => (
   <Head>
-    <title>{`${props.title} - Rehooks Documentation`}</title>
+    <title>{props.title}</title>
     <meta
       name="twitter:card"
       content={props.image ? 'summary_large_image' : 'summary'}

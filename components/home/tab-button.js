@@ -26,6 +26,7 @@ export default ({
         padding: 0.25rem 0.5rem;
         margin: ${isMobile ? '.25rem' : '0 1rem'};
         color: ${invert ? '#8D8D8D' : '#999'};
+        white-space: nowrap;
         transition: all 0.2s ease;
       }
       a:hover {

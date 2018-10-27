@@ -9,8 +9,8 @@ import TabButton from './tab-button'
 const DEMO_DATA = {
   'Stateful Counter': require('./demos/stateful-counter').default,
   'Stateful Input': require('./demos/stateful-input').default,
-  'Window Resizer': require('./demos/window-size').default
-  // 'More...': require('./demos/more').default
+  'Window Resizer': require('./demos/window-size').default,
+  'More...': require('./demos/more').default
 }
 
 export default () => {
@@ -71,14 +71,16 @@ export default () => {
                         {id}
                       </TabButton>
                     ))}
-                    <TabButton
-                      invert
-                      className="tab"
-                      isMobile={isMobile}
-                      href="https://github.com/rehooks"
-                    >
-                      More...
-                    </TabButton>
+                    {/*
+                      <TabButton
+                        invert
+                        className="tab"
+                        isMobile={isMobile}
+                        href="https://github.com/rehooks"
+                      >
+                        More...
+                      </TabButton>
+                    */}
                   </div>
                   <div className="demo-body row">
                     {isTablet &&

@@ -3,7 +3,43 @@ import withPure from '../../hoc/pure'
 
 import ArrowRightLong from '../../icons/arrow-right-long'
 
-const EXAMPLES = []
+const EXAMPLES = [
+  {
+    name: 'window-size',
+    description: 'Subscribe to window size',
+    href: 'https://github.com/rehooks/window-size'
+  },
+  {
+    name: 'input-value',
+    description: 'Create input values and onChange',
+    href: 'https://github.com/rehooks/input-value'
+  },
+  {
+    name: 'component-size',
+    description: 'Determine the size of a component',
+    href: 'https://github.com/rehooks/component-size'
+  },
+  {
+    name: 'device-orientation',
+    description: 'Device Orientation API',
+    href: 'https://github.com/rehooks/device-orientation'
+  },
+  {
+    name: 'document-visibility',
+    description: 'Monitor document visibility',
+    href: 'https://github.com/rehooks/document-visibility'
+  },
+  {
+    name: 'online-status',
+    description: 'Subscribe to online/offline status',
+    href: 'https://github.com/rehooks/online-status'
+  },
+  {
+    name: 'window-scroll-position',
+    description: 'Get X and Y scroll position',
+    href: 'https://github.com/rehooks/window-scroll-position'
+  }
+]
 
 const ExampleCard = withPure(({ name, href, description }) => (
   <Link href={href}>
@@ -12,7 +48,7 @@ const ExampleCard = withPure(({ name, href, description }) => (
         <span className="example-name fw6 f5">{name}</span>
         <span className="example-desc f6">{description}</span>
         <span className="example-link fw6 f6">
-          See this example{' '}
+          Open this package{' '}
           <span className="icon">
             <ArrowRightLong size="14" color="#2195ff" />
           </span>
@@ -81,16 +117,16 @@ export default {
         </div>
       ))}
       <div className="example-col">
-        <Link href="https://github.com/rehooks/examples/tree/master/examples">
+        <Link href="https://github.com/rehooks">
           <a target="_blank">
             <span className="more">
               <span
                 className="f5 fw6"
                 style={{ color: '#f3f3f3', marginBottom: '.2rem' }}
               >
-                github.com/rehooks/examples
+                github.com/rehooks
               </span>
-              <span className="f5">150+ examples</span>
+              <span className="f5">More on GitHub...</span>
             </span>
           </a>
         </Link>

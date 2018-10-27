@@ -1,6 +1,6 @@
 {
   "name": "rehooks-website",
-  "alias": ["rehooks.com", "www.rehooks.com"],
+  "alias": ["rehooks.com", "www.rehooks.com", "rehooks.now.sh"],
   "type": "static",
   "static": {
     "directoryListing": false,

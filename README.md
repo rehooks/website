@@ -12,4 +12,4 @@ If you need to make any changes to the website:
 
 ## Credits
 
-Big thank you to the [Next.js team](https://github.com/zeit/next.js) for the starting point for this website!
+Big thank you to the [Next.js team](https://github.com/zeit/next-site) for the starting point for this website!
