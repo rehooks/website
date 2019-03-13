@@ -13,7 +13,7 @@ export default () => (
           <h3 className="f3 fw6">Easy-to-use</h3>
           <p>
             Setting up React Hooks is as simple as upgrading to{' '}
-            <strong>React v16.7</strong> and using the new methods like{' '}
+            <strong>React v16.8</strong> and using the new methods like{' '}
             <code>useState</code>.
           </p>
           <Button href="/docs">Try it out &rarr;</Button>
